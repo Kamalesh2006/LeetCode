@@ -18,7 +18,7 @@ class Solution {
     }
     /**
      * 
-     * @param nums nums array of int type
+     * @param nums nums array of (int) type 
      * @return List<List<Integer>>
      */
     public List<List<Integer>> subsets(int[] nums) {
