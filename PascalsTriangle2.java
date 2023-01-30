@@ -20,6 +20,7 @@ public class PascalsTriangle2 {
             }
             //we are adding zero at the last so that we can add last element and last-1 element 
             //from the end of the array list
+            
             al.add(0);
 
             for(int j=al.size()-1;j>0;j--){
