@@ -68,6 +68,70 @@ class WordDictionary {
 
     }   
 }
+
+/*ArrayList is used to store the String from the user
+
+    HashSet is used to store the search word because if same word is passed twice to 
+    search we can determine it by using the hashset.
+
+    private ArrayList<String> wordArray;
+    private HashSet<String> searchWordArray;
+
+    public WordDictionary() {
+        //this is used to initialize the instance variable
+
+        wordArray = new ArrayList<String>();
+        searchWordArray= new HashSet<String>();
+    }
+    
+    public void addWord(String word) {
+
+        wordArray.add(word);
+
+    }
+    
+    public boolean search(String word) {
+        first the search word is checked in hashset and if it is present, then the search word is 
+        already been traversed in the String ArrayList and found to be true
+
+        int matchCount; //matchCount keep track of character matches in the String with searchword.
+
+        if(searchWordArray.contains(word)){
+            return true;
+        }
+
+        for(int i =0;i<wordArray.size();i++){
+
+            matchCount=0;
+
+            if(wordArray.get(i).length()!=word.length()){
+                continue;
+            }
+
+            for(int j=0;j<word.length();j++){
+
+                if(word.charAt(j)=='.'){
+                    matchCount++;
+                }
+
+                else if(wordArray.get(i).charAt(j)==word.charAt(j)){
+                    matchCount++;
+                }
+
+                if(matchCount!=j+1){
+                    break;
+                }
+
+            }
+            if(matchCount==word.length()){
+                searchWordArray.add(word);
+                return true;
+            }
+        }
+        return false;
+    } 
+   
+}*/
 public class DesignAddAndSearchWordsDataStructure {
     public static void main(String[] args) {
         WordDictionary wordDictionary = new WordDictionary();
