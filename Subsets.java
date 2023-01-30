@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class Subsets {
     
     private static void subset(List<List<Integer>> result, List<Integer> l, List<Integer> dt){
         List<Integer> tempL = new ArrayList<>(l);
